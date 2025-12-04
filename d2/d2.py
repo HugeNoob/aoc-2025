@@ -53,8 +53,8 @@ def solve2(input_file: str) -> int:
 
 
 if __name__ == "__main__":
-    assert solve("d2/d2_test.in") == 1227775554
-    assert solve("d2/d2.in") == 18952700150
+    assert solve("d2_test.in") == 1227775554
+    assert solve("d2.in") == 18952700150
 
-    assert solve2("d2/d2_test.in") == 4174379265
-    assert solve2("d2/d2.in") == 4174379265
+    assert solve2("d2_test.in") == 4174379265
+    assert solve2("d2.in") == 4174379265
