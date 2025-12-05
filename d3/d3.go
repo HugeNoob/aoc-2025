@@ -32,22 +32,6 @@ func solve(filepath string) int {
 	return res
 }
 
-func pick12(s string) string {
-	const k = 12
-	remove := len(s) - k
-	st := make([]byte, 0, len(s))
-
-	for i := 0; i < len(s); i++ {
-		d := s[i]
-		for remove > 0 && len(st) > 0 && st[len(st)-1] < d {
-			st = st[:len(st)-1]
-			remove--
-		}
-		st = append(st, d)
-	}
-	return string(st[:k])
-}
-
 func solve2(filepath string) int {
 	res := 0
 	f, _ := os.Open(filepath)
